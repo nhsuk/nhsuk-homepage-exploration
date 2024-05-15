@@ -7561,9 +7561,13 @@ b {
 }
 
 .nhsuk-hero--image-description .nhsuk-hero-content {
-  background: #ffffff;
-  color: #212b32;
+  margin-bottom: 40px;
+  background: #005eb8;
+  color: #ffffff;
   border: 1px solid #d8dde0;
+  position: relative;
+  width: 100%;
+  border: none;
 }
 
 .nhsuk-hero--image-description .nhsuk-hero-content {
@@ -7572,6 +7576,13 @@ b {
 
 .nhsuk-card__description {
   color: #212b32;
+}
+
+.nhsuk-hero2 {
+  background-color: #005eb8;
+  color: #ffffff;
+  position: relative;
+  /* background: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 100px), transparent calc(100% - 100px), transparent 100%); */
 }
 
 /**
