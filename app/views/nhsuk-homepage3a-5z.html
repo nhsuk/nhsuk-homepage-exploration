@@ -111,80 +111,63 @@
 {% block content %}
 
 <!-- hero image and "We're here for you" content -->
-<section class="nhsuk-hero2 nhsuk-hero--image nhsuk-hero--image-description">
+
+<!-- hero image and "We're here for you" content -->
+<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description">
     <script>
-      function randomImage() {
-          var images =[
-            "/images/nhsuk/homepage/IS_0818_homepage_hero_2_831416400.width-1000.jpg",
-            "/images/nhsuk/homepage/IS_0818_homepage_hero_3_913783962.width-1000.jpg",
-            "/images/nhsuk/homepage/AS_0818_homepage_hero_4_169974765.width-1000.jpg",
-            "/images/nhsuk/homepage/A_0818_homepage_hero_5_KRK6T6.width-1000.jpg",
-            "/images/nhsuk/homepage/S_0818_homepage_hero_1_F0147446.width-1000.jpg",
-          ];
+      
+
           var size = images.length;
           var x = Math.floor(size * Math.random());
           var element = document.getElementsByClassName('nhsuk-hero--image');
           if (element.length > 0) {
               element[0].style["background-image"] = "url(" + images[x] + ")";
           }
-      }
+      
       document.addEventListener("DOMContentLoaded", randomImage);
   </script>
-
-
-  <div class="nhsuk-hero__overlay">
+  <div class="">
     <div class="nhsuk-width-container">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-two-thirds">
-          <div class="nhsuk-hero-content nhsuk-hero-content">
-            
-            <h1 class="nhsuk-u-margin-bottom-3">We're here for you</h1>
-            <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">Helping you take control of your health and wellbeing.</p>
-
-
-
-            <span class="nhsuk-hero__arrow" aria-hidden="true"></span>
+          <div class="">
+            <h1 class="nhsuk-u-padding-top-9 nhsuk-u-padding-bottom-6">NHS website for health information and services in England</h1>
           </div>
         </div>
       </div>
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+          <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content nhsuk-card__content--primary">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="">
+                    Health A-Z
+                  </a>
+                </h2>
+                <p class="nhsuk-card__description">Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
+                <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+              </div>
+            </div>
+          </li>
+          <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content nhsuk-card__content--primary">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="">
+                    Medicine A-Z
+                  </a>
+                </h2>
+                <p class="nhsuk-card__description">Find out how your medicine works, how and when to take it, and possible side effects.</p>
+                <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>                                
+              </div>
+            </div>
+          </li>
+      </ul>
     </div>
   </div>
 </section>
 
 
-<!-- Health A-Z and Medicines A-Z -->
-<section class="nhsuk-section ">
-  <div class="nhsuk-width-container nhsuk-u-padding-top-9 nhsuk-u-padding-bottom-3 ">
-    <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-3">
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable ">
-          <div class="nhsuk-card__content nhsuk-card__content--primary">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="">
-                Health A-Z
-              </a>
-            </h2>
-            <p class="nhsuk-card__description">Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
-            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
-          </div>
-        </div>
-      </li>
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable ">
-          <div class="nhsuk-card__content nhsuk-card__content--primary">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="">
-                Medicine A-Z
-              </a>
-            </h2>
-            <p class="nhsuk-card__description">Find out how your medicine works, how and when to take it, and possible side effects.</p>
-            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>                                
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
 
 
 <!-- Manage your health -->
@@ -192,7 +175,7 @@
   <div class="nhsuk-width-container">
     <div class="nhsuk-grid-row">
       
-        <div class="nhsuk-grid-column-full app-section__content app-section__content nhsuk-u-padding-top-9">
+        <div class="nhsuk-grid-column-full app-section__content app-section__content nhsuk-u-padding-top-0">
            <div class="nhsuk-u-reading-width">
               <h2>Manage your health</h2>
             </div>
@@ -258,15 +241,17 @@
                   <span class="nhsuk-action-link__text">Find your NHS number</span>
                 </a>
               </div>
-         </ul>
-        </div>
+        </ul>
+
 
 
 
     </div>
       
+    </div>
   </div>
 </section>
+
 
 
 <!-- Find a service -->
@@ -341,6 +326,7 @@
 
     </div>
   </div>
+  
 
 </section>
 
@@ -351,68 +337,81 @@
 
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full app-section__content">
+          
       <h2>Featured</h2>
-
       <ul class="nhsuk-grid-row nhsuk-card-group">
 
         <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          <div class="nhsuk-card  nhsuk-card--clickable ">
-            <div class="nhsuk-card__content ">
+
+        <div class="nhsuk-card  nhsuk-card--clickable ">
+          <div class="nhsuk-card__content ">
+        
+          <h2 class="nhsuk-card__heading nhsuk-heading-m">
+            <a class="nhsuk-card__link" href="">
+              Book a COVID-19 vaccination appointment
+            </a>
+          </h2>
+        
+          <p>If you're eligible for a spring COVID-19 vaccine, you can book your appointment online</p>
+          
+        
+          </div>
+        </div>
+
+        </li>
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              
+
+        <div class="nhsuk-card  nhsuk-card--clickable ">
+
+          <div class="nhsuk-card__content ">
           
             <h2 class="nhsuk-card__heading nhsuk-heading-m">
               <a class="nhsuk-card__link" href="">
-                Book a COVID-19 vaccination appointment
+                Get healthcare cover abroad with a UK GHIC or UK EHIC
               </a>
             </h2>
-          
-            <p>If you're eligible for a spring COVID-19 vaccine, you can book your appointment online</p>
+              <p>Get or renew your health insurance card to help you get healthcare in the EU and some other countries</p>
             
           
-            </div>
           </div>
+        </div>
+
         </li>
 
-        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+
+        <li class=" nhsuk-grid-column-one-third nhsuk-card-group__item">
+            
           <div class="nhsuk-card  nhsuk-card--clickable ">
 
-            <div class="nhsuk-card__content ">
+          <div class="nhsuk-card__content ">
             
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Get healthcare cover abroad with a UK GHIC or UK EHIC
+                  Lorem ipsum dolor sit amet
                 </a>
               </h2>
-                <p>Get or renew your health insurance card to help you get healthcare in the EU and some other countries</p>
+            
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               
             
-            </div>
           </div>
+          </div>
+
         </li>
 
-
-        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          <div class="nhsuk-card  nhsuk-card--clickable ">
-            <div class="nhsuk-card__content ">
-                <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="">
-                    Lorem ipsum dolor sit amet
-                  </a>
-                </h2>
-              
-                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            
-            </div>
-          </div>
-        </li>
-
+        
       </ul>
-      </div>
+  
     </div>
-
+    
   </div>
+
+    
+  </div>
+  
+
 </section>
-
-
 <!-- Other cards -->
 <section class="nhsuk-section">
   <div class="nhsuk-width-container">
