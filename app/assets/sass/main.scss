@@ -10,7 +10,7 @@
 ///////////////////////////////////////////
 /// 
 @import '_newhomepage';
-@import '_beta';
+//@import '_beta';
 
 
 
@@ -279,13 +279,14 @@
 
 .nhsuk-main-wrapper .nhsuk-search__submit:hover {
   background-color: #00662f;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nhsuk-main-wrapper .nhsuk-search__submit:focus {
+  color: #212b32;
   background-color: #ffeb3b;
   border-bottom: 4px solid #212b32;
-  box-shadow: none
+  box-shadow: none;
 }
 
 .nhsuk-main-wrapper .nhsuk-search__submit:focus .nhsuk-icon {
@@ -294,7 +295,6 @@
 
 
 //homepage blue button links
-
 .nhsuk-main-wrapper .app-list-signage li a {
   background: #005eb8;
   color: #fff !important;
@@ -305,9 +305,17 @@
   width: 100%;
 }
 
+.app-list-signage li a:focus {
+  background: #ffeb3b;
+  box-shadow: inset 0 -4px 0 0 #212b32;
+  color: #212b32;
+}
+
+
 .app-list-signage-link {
   color: #fff;
 }
+
 
 
 //hub links list
@@ -447,3 +455,19 @@
 }
 
 
+@media (min-width: 40.0625em) {
+      .nhsuk-hero--image-description .nhsuk-hero-content {
+          bottom: -48px;
+          margin-bottom: 0;
+          max-width: 35em;
+          padding: 32px 40px;
+          position: absolute;
+          top: auto;
+        }
+  }
+
+@media (min-width: 23.4375em) {
+  .nhsuk-hero--image-description .nhsuk-hero-content {
+    width: 85%;
+  }
+}
