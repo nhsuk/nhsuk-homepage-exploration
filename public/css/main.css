@@ -7551,6 +7551,17 @@ b {
   text-decoration: underline;
 }
 
+.nhsuk-hero--image-description .nhsuk-hero-content2 {
+  background-color: #005eb8;
+  color: #ffffff;
+  margin-bottom: 24px;
+  padding: 24px;
+  position: relative;
+  top: 70px;
+  max-width: 35em;
+  width: 85%;
+}
+
 .nhsuk-header__search-form {
   background-color: transparent;
   padding: 0;
