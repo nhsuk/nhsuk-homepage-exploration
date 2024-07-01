@@ -8176,11 +8176,15 @@ b {
   min-height: 320px;
 }
 
-.nhsuk-hero-bluebackground {
-  background-color: #005eb8;
+.nhsuk-hero {
+  background-color: white;
   color: #ffffff;
   position: relative;
-  background: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 100px), transparent calc(100% - 100px), transparent 100%);
+  background-position: center calc(100% - 100px);
+}
+
+.nhsuk-hero--blue-bg {
+  background-image: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 30px), transparent calc(100% - 30px), transparent 100%) !important;
 }
 
 .nhsuk-hero--image-description .nhsuk-hero-content {
@@ -8204,6 +8208,17 @@ b {
 
 .nhsuk-card__description {
   color: #212b32;
+}
+
+.nhsuk-hero2 {
+  background-color: #005eb8;
+  color: #ffffff;
+  position: relative;
+  /* background: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 100px), transparent calc(100% - 100px), transparent 100%); */
+}
+
+.nhsuk-blue-box {
+  background: #005eb8;
 }
 
 .nhsuk-expander .nhsuk-details__summary-text {
