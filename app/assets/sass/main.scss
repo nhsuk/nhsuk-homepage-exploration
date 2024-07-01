@@ -9,8 +9,11 @@
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
 /// 
+@import '_beta';
+
+//@import '_newhomepage'; causes the A-Z to float
+//@import '_newhomepage';
 @import '_newhomepage';
-//@import '_beta';
 
 
 
@@ -26,9 +29,9 @@
 }
 
 
-//Floating blue box Change class so only affects option c
+//Floating blue boxChange class so only affects option c
 .nhsuk-hero--image-description .nhsuk-hero-content2 {
-  background-color: #005eb8;
+  background-color: #b4c3d2;
   color: #ffffff;
   margin-bottom: 24px;
   padding: 24px;
@@ -485,5 +488,18 @@
 @media (min-width: 23.4375em) {
   .nhsuk-hero--image-description .nhsuk-hero-content {
     width: 85%;
+  }
+}
+
+// Make Manage your health span 
+.twocolumn-actionlink {
+  column-count: 2;
+  padding-left: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .twocolumn-actionlink {
+    column-count: 1;
   }
 }
