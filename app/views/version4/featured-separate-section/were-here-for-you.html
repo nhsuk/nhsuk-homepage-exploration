@@ -129,26 +129,32 @@
 {% block content %}
 
 <!-- hero image and "We're here for you" content -->
-<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description">
-    <script>
-      
-
-          var size = images.length;
-          var x = Math.floor(size * Math.random());
-          var element = document.getElementsByClassName('nhsuk-hero--image');
-          if (element.length > 0) {
-              element[0].style["background-image"] = "url(" + images[x] + ")";
-          }
-      
-      document.addEventListener("DOMContentLoaded", randomImage);
+<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description nhsuk-hero--blue-bg">
+  <script>
+    function randomImage() {
+        var images =[
+          "/images/nhsuk/homepage/IS_0818_homepage_hero_2_831416400.width-1000.jpg",
+          "/images/nhsuk/homepage/IS_0818_homepage_hero_3_913783962.width-1000.jpg",
+          "/images/nhsuk/homepage/AS_0818_homepage_hero_4_169974765.width-1000.jpg",
+          "/images/nhsuk/homepage/A_0818_homepage_hero_5_KRK6T6.width-1000.jpg",
+          "/images/nhsuk/homepage/S_0818_homepage_hero_1_F0147446.width-1000.jpg",
+        ];
+        var size = images.length;
+        var x = Math.floor(size * Math.random());
+        var element = document.getElementsByClassName('nhsuk-hero--image');
+        if (element.length > 0) {
+            element[0].style["background-image"] = "url(" + images[x] + ")";
+        }
+    }
+    document.addEventListener("DOMContentLoaded", randomImage);
   </script>
   <div class="">
     <div class="nhsuk-width-container">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-two-thirds">
-          <div class="">
-            <h1 class="nhsuk-u-padding-top-6 nhsuk-u-margin-bottom-3">We're here for you</h1>
-            <p class="nhsuk-body-l nhsuk-u-margin-bottom-0 nhsuk-u-padding-bottom-8">Helping you take control of your health and wellbeing.</p>
+          <div class="nhsuk-blue-box nhsuk-u-padding-4 nhsuk-u-margin-top-9 nhsuk-u-margin-bottom-9">
+            <h1 class="nhsuk-u-padding-top-2 nhsuk-u-margin-bottom-3">We're here for you</h1>
+            <p class="nhsuk-body-l nhsuk-u-margin-bottom-0 nhsuk-u-padding-bottom-2">Helping you take control of your health and wellbeing.</p>
 
 
 
@@ -194,73 +200,54 @@
   <div class="nhsuk-width-container">
     <div class="nhsuk-grid-row">
       
-        <div class="nhsuk-grid-column-full app-section__content app-section__content nhsuk-u-padding-top-3">
+        <div class="nhsuk-grid-column-full app-section__content app-section__content nhsuk-u-padding-top-0">
           <div class="nhsuk-u-reading-width">
             <h2>Manage your health</h2>
           </div>
 
-          <div class="twocolumn-actionlink">
-            <div class="nhsuk-u-padding-bottom-4">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">Order a repeat prescription</span>
+          <ul class="nhsuk-hub-key-links beta-hub-key-links">
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="https://www.nhs.uk/nhs-services/gps/gp-appointments-and-bookings/">
+                Order a repeat prescription
               </a>
-            </div>
-  
-            <div class="nhsuk-u-padding-bottom-4">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">View your GP health record</span>
+            </li>
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="https://www.nhs.uk/nhs-services/gps/using-an-online-form-to-contact-your-gp-surgery/">
+                View your GP health record
               </a>
-            </div>
-  
-            <div class="nhsuk-u-padding-bottom-4">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">View your test results</span>
+            </li>
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="https://www.nhs.uk/nhs-services/gps/video-consultations/">
+                View your test results
               </a>
-            </div>
-  
-            <div class="nhsuk-u-padding-bottom-4">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">Appointments and bookings at your GP surgery</span>
+            </li>
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="https://www.nhs.uk/nhs-services/gps/what-to-ask-your-doctor/">
+                Appointments and bookings at your GP surgery
               </a>
-            </div>
-  
-            <div class="nhsuk-u-padding-bottom-4">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">How to register with a GP surgery</span>
+            </li>
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="https://www.nhs.uk/nhs-services/gps/view-your-gp-health-record/">
+                How to register with a GP surgery
               </a>
-            </div>
-  
-            <div class="nhsuk-u-padding-bottom-1">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">Find your NHS number</span>
+            </li>
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="https://www.nhs.uk/nhs-services/gps/view-your-gp-health-record/">
+                Find your NHS number
               </a>
-            </div>
+            </li>
+          
 
-          </div>
+          
+        </ul>
+
+
 
 
         </div>
