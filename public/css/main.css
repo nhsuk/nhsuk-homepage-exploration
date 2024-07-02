@@ -8592,3 +8592,8 @@ b {
 .h1-light-blue {
   color: #d2e2f1;
 }
+
+/* Add blue divider below nav header */
+.beta-nhsuk-navigation {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
