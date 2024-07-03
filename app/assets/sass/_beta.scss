@@ -493,7 +493,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 .beta-mobile-menu-container {
   align-self: center;
   display: none;
-  margin-left: auto;
+  //margin-left: auto;  // Avi: I removed ths code so it doesn't align to the right of the screen 
 
   &.js-show {
     display: block;

@@ -8000,7 +8000,6 @@ b {
 .beta-mobile-menu-container {
   align-self: center;
   display: none;
-  margin-left: auto;
 }
 .beta-mobile-menu-container.js-show {
   display: block;
@@ -8594,6 +8593,11 @@ b {
 }
 
 /* Add blue divider below nav header */
-.beta-nhsuk-navigation {
+.beta-nhsuk-navigation-bottomBorder4-blueBackground {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Make H1 lead text below heading smaller */
+.leadtext-resize-smaller {
+  font-size: 2.7rem;
 }
