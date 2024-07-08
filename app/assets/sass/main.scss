@@ -418,7 +418,7 @@
   }
 }
 
-// Make Manage your health span 
+// Make rManage your health span 
 .twocolumn-actionlink {
   column-count: 2;
   padding-left: 0;
@@ -455,11 +455,17 @@
 
 //first value is mobile (margin-top)
 .beta-card-overlay {
-  @include mq($until: desktop) {
-    margin-top: -80px;
+  clear: float;
+  @include mq($until: tablet) {
+    margin-top: -80px; // for mobile
   }
-  margin-top: -110px;
+  @include mq($until: desktop) {
+    margin-top: -70px; // for tablet 
+  }
+  margin-top: -110px; // for desktop
 }
+
+
 
 //first value is mobile (margin-top)
 .beta-card-overlay-blue-header {
@@ -468,3 +474,4 @@
   }
   margin-top: -130px;
 }
+

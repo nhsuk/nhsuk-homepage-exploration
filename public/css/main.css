@@ -8611,11 +8611,17 @@ b {
 }
 
 .beta-card-overlay {
+  clear: float;
   margin-top: -110px;
+}
+@media (max-width: 40.0525em) {
+  .beta-card-overlay {
+    margin-top: -80px;
+  }
 }
 @media (max-width: 48.0525em) {
   .beta-card-overlay {
-    margin-top: -80px;
+    margin-top: -70px;
   }
 }
 
