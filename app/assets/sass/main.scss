@@ -456,21 +456,48 @@
 //first value is mobile (margin-top)
 .beta-card-overlay {
   @include mq($until: tablet) {
-    margin-top: -80px; // for mobile
+    margin-top: -100px; // for mobile
   }
   @include mq($until: desktop) {
-    margin-top: -70px; // for tablet 
+    margin-top: -100px; // for tablet 
   }
-  margin-top: -110px; // for desktop
+  margin-top: -90px; // for desktop
 }
 
 
-
-//first value is mobile (margin-top)
 .beta-card-overlay-blue-header {
-  @include mq($until: desktop) {
-    margin-top: -140px;
+  @include mq($until: tablet) {
+    margin-top: -140px; // for mobile
   }
-  margin-top: -130px;
+  @include mq($until: desktop) {
+    margin-top: -150px; // for tablet 
+  }
+  margin-top: -130px; // for desktop
 }
 
+.beta-card-overlay-blue-header-small-h1 {
+  @include mq($until: tablet) {
+    margin-top: -140px; // for mobile
+  }
+  @include mq($until: desktop) {
+    margin-top: -130px; // for tablet 
+  }
+  margin-top: -160px; // for desktop
+}
+
+//fix the issue of A-Z boxes breaking between desktop and tablet breakpoint
+.nhsuk-hero--image {
+  @include mq($until: tablet) {
+    min-height: 300px; // for mobile
+    padding-bottom: 150px;
+
+  }
+  @include mq($until: desktop) {
+            // for tablet 
+  }
+    min-height: 300px; // for desktop
+    padding-bottom: 130px;
+
+
+  //background-color: #ffeb3b;
+}
