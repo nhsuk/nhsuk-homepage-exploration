@@ -455,7 +455,6 @@
 
 //first value is mobile (margin-top)
 .beta-card-overlay {
-  clear: float;
   @include mq($until: tablet) {
     margin-top: -80px; // for mobile
   }

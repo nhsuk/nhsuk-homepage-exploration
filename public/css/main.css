@@ -8173,6 +8173,7 @@ b {
 
 .nhsuk-hero--image {
   min-height: 390px;
+  padding-bottom: 130px;
 }
 @media (max-width: 48.0525em) {
   .nhsuk-hero--image {
@@ -8611,7 +8612,6 @@ b {
 }
 
 .beta-card-overlay {
-  clear: float;
   margin-top: -110px;
 }
 @media (max-width: 40.0525em) {
