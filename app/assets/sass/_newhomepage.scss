@@ -1,7 +1,25 @@
+//(Paul's code)
+//.nhsuk-hero--image { 
+//    min-height: 390px;
+//}
 
+
+//first value is mobile (Avi's code)
 .nhsuk-hero--image {
-    min-height: 420px;
-}
+    @include mq($until: desktop) {
+        min-height: 350px;
+    }
+    min-height: 390px;
+  }
+
+//first value is mobile (Avi's code)
+  .nhsuk-hero--bluebackground {
+    @include mq($until: desktop) {
+        min-height: 350px;
+    }
+    min-height: 340px;
+  }
+
 
 
 .nhsuk-hero {

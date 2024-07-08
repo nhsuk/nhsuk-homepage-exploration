@@ -453,9 +453,18 @@
   font-size: 2.7rem;
 }
 
+//first value is mobile (margin-top)
 .beta-card-overlay {
   @include mq($until: desktop) {
-    margin-top: -130px;
+    margin-top: -80px;
   }
-  margin-top: -70px;
+  margin-top: -110px;
+}
+
+//first value is mobile (margin-top)
+.beta-card-overlay-blue-header {
+  @include mq($until: desktop) {
+    margin-top: -140px;
+  }
+  margin-top: -130px;
 }

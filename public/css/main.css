@@ -8172,7 +8172,21 @@ b {
 }
 
 .nhsuk-hero--image {
-  min-height: 420px;
+  min-height: 390px;
+}
+@media (max-width: 48.0525em) {
+  .nhsuk-hero--image {
+    min-height: 350px;
+  }
+}
+
+.nhsuk-hero--bluebackground {
+  min-height: 340px;
+}
+@media (max-width: 48.0525em) {
+  .nhsuk-hero--bluebackground {
+    min-height: 350px;
+  }
 }
 
 .nhsuk-hero {
@@ -8597,10 +8611,19 @@ b {
 }
 
 .beta-card-overlay {
-  margin-top: -70px;
+  margin-top: -110px;
 }
 @media (max-width: 48.0525em) {
   .beta-card-overlay {
-    margin-top: -130px;
+    margin-top: -80px;
+  }
+}
+
+.beta-card-overlay-blue-header {
+  margin-top: -130px;
+}
+@media (max-width: 48.0525em) {
+  .beta-card-overlay-blue-header {
+    margin-top: -140px;
   }
 }
