@@ -482,7 +482,7 @@
   @include mq($until: desktop) {
     margin-top: -130px; // for tablet 
   }
-  margin-top: -160px; // for desktop
+  margin-top: -130px; // for desktop
 }
 
 //fix the issue of A-Z boxes breaking between desktop and tablet breakpoint
