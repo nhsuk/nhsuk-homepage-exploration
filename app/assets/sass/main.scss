@@ -496,7 +496,7 @@
             // for tablet 
   }
     min-height: 300px; // for desktop
-    padding-bottom: 130px;
+    padding-bottom: 90px; //was 130 but too big
 
 
   //background-color: #ffeb3b;
@@ -511,4 +511,10 @@
 //background-color for 111 card;
 .nhsuk-card-white {
   background-color: #fff;
+}
+
+//remove bullets from Manage your health list of action links
+.app-list-signage-actionlinks {
+    list-style-type: none;
+    padding-left: 0px;
 }

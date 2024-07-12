@@ -8655,7 +8655,7 @@ b {
 
 .nhsuk-hero--image {
   min-height: 300px;
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 @media (max-width: 40.0525em) {
   .nhsuk-hero--image {
@@ -8669,4 +8669,9 @@ b {
 
 .nhsuk-card-white {
   background-color: #fff;
+}
+
+.app-list-signage-actionlinks {
+  list-style-type: none;
+  padding-left: 0px;
 }
