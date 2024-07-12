@@ -8663,3 +8663,10 @@ b {
     padding-bottom: 150px;
   }
 }
+.nhsuk-card-grey {
+  background-color: #f0f4f5;
+}
+
+.nhsuk-card-white {
+  background-color: #fff;
+}
