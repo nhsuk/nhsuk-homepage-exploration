@@ -449,9 +449,17 @@
 }
 
 /* Make H1 lead text below heading smaller */
-.leadtext-resize-smaller{
-  font-size: 2.7rem;
+.leadtext-resize-smaller {
+  @include mq($until: tablet) {
+    font-size: 2rem; // for mobile
+  }
+  @include mq($until: desktop) {
+    font-size: 2.7rem; // for tablet 
+  }
+  font-size: 2.7rem; // for desktop
 }
+
+
 
 //first value is mobile (margin-top)
 .beta-card-overlay {

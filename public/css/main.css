@@ -8235,6 +8235,11 @@ b {
   background: #005eb8;
 }
 
+.action-link-list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .nhsuk-expander .nhsuk-details__summary-text {
   color: #005eb8;
   cursor: pointer;
@@ -8609,6 +8614,16 @@ b {
 /* Make H1 lead text below heading smaller */
 .leadtext-resize-smaller {
   font-size: 2.7rem;
+}
+@media (max-width: 40.0525em) {
+  .leadtext-resize-smaller {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 48.0525em) {
+  .leadtext-resize-smaller {
+    font-size: 2.7rem;
+  }
 }
 
 .beta-card-overlay {
