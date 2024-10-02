@@ -526,3 +526,32 @@
     list-style-type: none;
     padding-left: 0px;
 }
+
+//remove bullets from App links
+.app-links {
+  list-style: none;
+  padding-left: 0px;
+}
+
+//remove bullets from App links - other option - can del if not used
+.app-apps-store-link {
+  margin-left: 0;
+  margin: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.nhsuk-button {
+  margin-bottom: 10px;
+}
+
+//Fix bottom border styling
+
+.nhsuk-footer-bottom-border {
+  border-bottom: 10px solid #4c6272;
+}
+
+.nhsuk-footer {
+  border-bottom: none;
+}
